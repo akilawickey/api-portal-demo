@@ -6,7 +6,7 @@
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
     <changeSet  author="akila"  id="changelog-1.0">
-        <createTable  schemaName="apiPortalDBDevelopmentv1" tableName="users">
+        <createTable  schemaName="apiportaldemo" tableName="users">
             <column  name="id"  type="INTEGER" autoIncrement="true">
                 <constraints  nullable="false"  primaryKey="true"  unique="true" />
             </column>
@@ -21,7 +21,7 @@
             </column>
         </createTable>
 
-        <createTable  schemaName="apiPortalDBDevelopmentv1" tableName="roles">
+        <createTable  schemaName="apiportaldemo" tableName="roles">
             <column  name="id"  type="INTEGER" autoIncrement="true">
                 <constraints  nullable="false"  primaryKey="true"  unique="true" />
             </column>
@@ -30,7 +30,7 @@
             </column>
         </createTable>
 
-        <createTable  schemaName="apiPortalDBDevelopmentv1" tableName="apis">
+        <createTable  schemaName="apiportaldemo" tableName="apis">
             <column  name="id"  type="INTEGER" autoIncrement="true">
                 <constraints  nullable="false"  primaryKey="false"  unique="true" />
             </column>
