@@ -69,6 +69,7 @@ public class ApiPublisherServiceImpl implements ApiPublisherService {
     @Override
     public List<ApiPublishDTO> getEndpoints(boolean isProtected) {
         try {
+            //modelMapper.map(faqRepository.findAll(), new TypeToken<List<FaqResponseDto>>() {}.getType())
             return (apiRepository
                     .findAllByProtected(isProtected))
                     .stream()
