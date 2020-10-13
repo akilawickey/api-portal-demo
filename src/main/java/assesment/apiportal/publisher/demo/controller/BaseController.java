@@ -8,7 +8,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 public class BaseController {
-
     @ExceptionHandler(ApiProvisionErrorResponce.class)
     public ResponseEntity<ErrorResponse> deviceNotFoundExceptionHandler(Exception ex) {
         ErrorResponse error = new ErrorResponse();
@@ -16,7 +15,6 @@ public class BaseController {
         error.setDesc(ex.getMessage());
         return new ResponseEntity<ErrorResponse>(error, HttpStatus.BAD_REQUEST);
     }
-
     @ExceptionHandler(FileStorageException.class)
     public ResponseEntity<ErrorResponse> fileStorageExceptionHandler(Exception ex) {
         ErrorResponse error = new ErrorResponse();
