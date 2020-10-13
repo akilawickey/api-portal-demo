@@ -22,4 +22,6 @@ public class BaseController {
         error.setDesc(ex.getMessage());
         return new ResponseEntity<ErrorResponse>(error, HttpStatus.BAD_REQUEST);
     }
+
+
 }
